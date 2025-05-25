@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header.hero {
   background: url('banner.png') no-repeat center center;
   background-size: cover;
@@ -15,6 +16,7 @@ header.hero {
   align-items: center;
   text-align: center;
 }
+
 .hero-text {
   color: #ffcc00;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
@@ -22,14 +24,17 @@ header.hero {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
 }
+
 .hero-text h1 {
   margin: 0;
   font-size: 3em;
 }
+
 .hero-text p {
   font-size: 1.4em;
   margin-top: 0.5em;
 }
+
 .main-nav {
   background-color: #292929;
   text-align: center;
@@ -39,6 +44,7 @@ header.hero {
   top: 0;
   z-index: 10;
 }
+
 .main-nav a {
   color: #ffcc00;
   margin: 0 1em;
@@ -46,16 +52,20 @@ header.hero {
   font-weight: bold;
   font-size: 1.1em;
 }
+
 .main-nav a:hover {
   text-decoration: underline;
 }
+
 main {
-  padding: 2em;
+  padding: 5em 2em 2em 2em;
 }
+
 .values-list {
   list-style-type: square;
   padding-left: 1.5em;
 }
+
 .values-list li {
   margin-bottom: 1em;
   font-size: 1.1em;
@@ -66,9 +76,11 @@ main {
   .hero-text h1 {
     font-size: 2em;
   }
+
   .hero-text p {
     font-size: 1em;
   }
+
   .main-nav a {
     display: block;
     margin: 0.5em 0;
