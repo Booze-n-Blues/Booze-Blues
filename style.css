@@ -1,3 +1,4 @@
+/* Global Reset */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #1b1b1b;
@@ -6,40 +7,7 @@ body {
   padding: 0;
 }
 
-header.hero-img {
-  position: relative;
-  height: auto;
-  overflow: hidden;
-}
-
-header.hero-img img {
-  width: 100%;
-  display: block;
-}
-
-.hero-img .hero-text {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #ffcc00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  text-align: center;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 1em;
-  border-radius: 8px;
-}
-
-.hero-text h1 {
-  margin: 0;
-  font-size: 3em;
-}
-
-.hero-text p {
-  font-size: 1.4em;
-  margin-top: 0.5em;
-}
-
+/* Navigation Bar */
 .main-nav {
   background-color: #292929;
   text-align: center;
@@ -47,7 +15,7 @@ header.hero-img img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .main-nav a {
@@ -62,54 +30,10 @@ header.hero-img img {
   text-decoration: underline;
 }
 
-main {
-  padding: 5em 2em 2em 2em;
-}
-
-.values-list {
-  list-style-type: square;
-  padding-left: 1.5em;
-}
-
-.values-list li {
-  margin-bottom: 1em;
-  font-size: 1.1em;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .hero-text h1 {
-    font-size: 2em;
-  }
-
-  .hero-text p {
-    font-size: 1em;
-  }
-
-  .main-nav a {
-    display: block;
-    margin: 0.5em 0;
-  }
-}
-
-/* Hero: text-only for basic layout */
-.hero-text-only {
-  text-align: center;
-  padding: 3em 1em 2em;
-  background-color: #1b1b1b;
-}
-
-/* Footer image banner fallback */
-footer.hero-image img {
-  width: 100%;
-  display: block;
-  margin-top: 2em;
-}
-
-/* Hero with full image and blended overlay text */
+/* Hero Section with Text Overlay */
 header.hero-blended {
   position: relative;
-  height: auto;
+  width: 100%;
   overflow: hidden;
   text-align: center;
 }
@@ -143,4 +67,40 @@ header.hero-blended {
   padding: 1.5em;
   border-radius: 12px;
   max-width: 90%;
+}
+
+/* Main Content Section */
+main {
+  padding: 5em 2em 2em 2em;
+}
+
+/* Values List */
+.values-list {
+  list-style-type: square;
+  padding-left: 1.5em;
+}
+
+.values-list li {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .hero-overlay .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-overlay .hero-text p {
+    font-size: 1em;
+  }
+
+  .main-nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  main {
+    padding: 4em 1.5em 2em 1.5em;
+  }
 }
