@@ -7,8 +7,7 @@ body {
 }
 
 header.hero {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(27, 27, 27, 1)),
-              url('banner.png') no-repeat center center;
+  background: url('banner.png') no-repeat center center;
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -18,6 +17,9 @@ header.hero {
   align-items: center;
   text-align: center;
   padding-bottom: 2em;
+
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0));
 }
 
 .hero-text {
