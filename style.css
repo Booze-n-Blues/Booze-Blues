@@ -7,9 +7,10 @@ body {
 }
 
 header.hero {
-  background: url('banner.png') no-repeat center top;
-  background-size: cover;
-  height: 75vh;
+  background: url('banner.png') no-repeat top center;
+  background-size: contain;
+  background-color: #1b1b1b;
+  height: 90vh;
   position: relative;
   display: flex;
   flex-direction: column;
