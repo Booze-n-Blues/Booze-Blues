@@ -60,13 +60,13 @@ header.hero-blended {
   z-index: 2;
 }
 
-.hero-overlay .hero-text {
+hero-overlay .hero-text {
   color: #ffcc00;
   text-shadow: 2px 2px 5px #000;
-  background-color: rgba(0, 0, 0, 0.4);
   padding: 1.5em;
-  border-radius: 12px;
   max-width: 90%;
+  text-align: left;
+  align-self: flex-start;
 }
 
 /* Main Content */
